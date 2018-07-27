@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     index: {
         color: '#828282',
         fontSize: 14,
-        minWidth: 10,
+        minWidth: 15,
         textAlign: 'right'
     },
 
