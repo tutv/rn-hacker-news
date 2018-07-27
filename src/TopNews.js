@@ -23,7 +23,7 @@ class TopNews extends Component {
     _fetchListNews = () => {
         this.setState({loading: true})
 
-        fetch('https://hacker-news.firebaseio.com/v0/newstories.json')
+        fetch('https://hacker-news.firebaseio.com/v0/topstories.json')
             .then(response => response.json())
             .then(result => {
                 if (!this._mounted) return
