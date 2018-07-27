@@ -55,7 +55,7 @@ class NewsItem extends Component {
         return (
             <View style={styles.container}>
                 <View style={styles.left}>
-                    <Text style={styles.index}>{index}.</Text>
+                    <Text style={styles.index}>{index + 1}.</Text>
                 </View>
                 <View style={styles.right}>
                     <Text style={styles.title}>
