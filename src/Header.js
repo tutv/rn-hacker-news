@@ -8,6 +8,7 @@ class Header extends Component {
                 <View style={styles.list}>
                     <Image style={styles.logo} source={{uri: 'https://news.ycombinator.com/y18.gif'}}/>
                     <Text style={styles.title}>Hacker News</Text>
+                    <Text style={styles.new}>top</Text>
                 </View>
             </View>
         )
@@ -26,6 +27,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'flex-start',
         width: '100%',
+        alignItems: 'center'
     },
 
     logo: {
@@ -38,7 +40,8 @@ const styles = StyleSheet.create({
 
     title: {
         color: '#222',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        marginRight: 5,
     },
 
     new: {
