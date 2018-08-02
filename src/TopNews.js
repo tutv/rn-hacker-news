@@ -21,6 +21,8 @@ class TopNews extends Component {
     }
 
     _fetchListNews = () => {
+        if (this.state.loading) return
+
         this.setState({loading: true})
 
         fetch('https://hacker-news.firebaseio.com/v0/topstories.json')
